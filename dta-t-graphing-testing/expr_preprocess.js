@@ -1,6 +1,7 @@
 const Parser = require('expr-eval').Parser;
 
 function preParseExpression(expressionString, variables) {
+    // CREDIT: https://github.com/silentmatt/expr-eval/issues/1#issuecomment-42589068
     var variables = variables.join('');
   
     // Build an object with replacement rules. (The order matters!)
